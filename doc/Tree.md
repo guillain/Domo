@@ -1,0 +1,180 @@
+## Tree
+
+````commandline
+$ find . | grep -v '.git' | grep -v '.idea' | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"
+.
+  |-.env
+  |-app
+  |  |-ESP
+  |  |  |-ESP_32_Cam
+  |  |  |  |-myconfig_TEMPLATE.h
+  |  |  |  |-platformio.ini
+  |  |  |-ESP_8266_RFID
+  |  |  |  |-platformio.ini
+  |  |  |  |-settings_TEMPLATE.json
+  |  |  |  |-users.json
+  |  |  |-ESP_8266_Sensors
+  |  |  |  |-config.dat
+  |  |  |  |-Custom-TEMPLATE.h
+  |  |  |  |-platformio.ini
+  |  |  |  |-rules1.txt
+  |  |  |  |-rules2.txt
+  |  |  |  |-rules4.txt
+  |  |-generate.sh
+  |  |-HABPanel
+  |  |  |-images
+  |  |  |  |-first_floor.png
+  |  |  |  |-ground.png
+  |  |  |  |-outdoor.png
+  |  |  |  |-second_floor.png
+  |  |  |-web_pages
+  |  |  |  |-Camera_TEMPLATE.html
+  |  |  |  |-first_floor.html
+  |  |  |  |-ground_floor.html
+  |  |  |  |-outdoor.html
+  |  |  |  |-RFID_TEMPLATE.html
+  |  |  |  |-second_floor.html
+  |  |  |  |-Sensors_TEMPLATE.html
+  |  |  |  |-Streaming_TEMPLATE.html
+  |  |  |  |-test_TEMPLATE.html
+  |  |-jq.exe
+  |  |-NodeRed
+  |  |  |-ESP_32_Cam
+  |  |  |  |-functions.json
+  |  |  |  |-settings_TEMPLATE.json
+  |  |  |-ESP_8266_RFID
+  |  |  |  |-functions.json
+  |  |  |  |-settings_TEMPLATE.json
+  |  |  |-ESP_8266_Sensors
+  |  |  |  |-functions.json
+  |  |  |  |-settings_TEMPLATE.json
+  |  |-OpenHAB
+  |  |  |-API
+  |  |  |  |-ESP_32_Cam
+  |  |  |  |  |-items_TEMPLATE.json
+  |  |  |  |  |-links_TEMPLATE.json
+  |  |  |  |  |-rules_TEMPLATE.json
+  |  |  |  |  |-things_TEMPLATE.json
+  |  |  |  |-ESP_8266_RFID
+  |  |  |  |  |-items_TEMPLATE.json
+  |  |  |  |  |-links_TEMPLATE.json
+  |  |  |  |  |-rules_TEMPLATE.json
+  |  |  |  |  |-things_TEMPLATE.json
+  |  |  |  |-ESP_8266_Sensors
+  |  |  |  |  |-items_TEMPLATE.json
+  |  |  |  |  |-links_TEMPLATE.json
+  |  |  |  |  |-rules_TEMPLATE.json
+  |  |  |  |  |-things_TEMPLATE.json
+  |  |  |  |-items_Location_TEMPLATE.json
+  |  |  |-map
+  |  |  |  |-lamp.map
+  |  |  |  |-switch.map
+  |  |  |-web_pages
+  |  |  |  |-ESP_32_Cam
+  |  |  |  |  |-overview_HEADER.yml
+  |  |  |  |  |-overview_TEMPLATE.yml
+  |  |  |  |  |-page_TEMPLATE.yml
+  |  |  |  |-ESP_8266_RFID
+  |  |  |  |  |-overview_HEADER.yml
+  |  |  |  |  |-overview_TEMPLATE.yml
+  |  |  |  |  |-page_TEMPLATE.yml
+  |  |  |  |-ESP_8266_Sensors
+  |  |  |  |  |-overview_HEADER.yml
+  |  |  |  |  |-overview_TEMPLATE.yml
+  |  |  |  |  |-page_TEMPLATE.yml
+  |-doc
+  |  |-ESP.md
+  |  |-ESP_32_Cam.md
+  |  |-ESP_8266_RFID.md
+  |  |-ESP_8266_Sensors.md
+  |  |-HABPanel.md
+  |  |-images
+  |  |  |-ESP_32_Cam-Hardware.jpg
+  |  |  |-ESP_32_Cam-Overview.png
+  |  |  |-ESP_32_Cam-Pinout.png
+  |  |  |-ESP_32_Cam.png
+  |  |  |-ESP_8266-D1_mini-Pinout.png
+  |  |  |-ESP_8266-D1_mini.png
+  |  |  |-ESP_8266-D1_mini_RFID-Pined.png
+  |  |  |-ESP_8266_RFID-Hardware.jpg
+  |  |  |-ESP_8266_RFID-Overview.png
+  |  |  |-ESP_8266_Sensors-Device_overview.png
+  |  |  |-ESP_8266_Sensors-Hardware.jpg
+  |  |  |-ESP_8266_Sensors-Overview.png
+  |  |  |-HABPanel-Camera.png
+  |  |  |-HABPanel-Door.png
+  |  |  |-HABPanel-Overview.png
+  |  |  |-HABPanel-Sensors.png
+  |  |  |-HABPanel-Streaming.png
+  |  |  |-HABPanel_first_floor.png
+  |  |  |-HABPanel_ground.png
+  |  |  |-HABPanel_outdoor.png
+  |  |  |-HABPanel_second_floor.png
+  |  |  |-iRobot.jpg
+  |  |  |-Jarvis.jpg
+  |  |  |-Matrix_creator.jpg
+  |  |  |-OH3-ESP_32_Cam-Overview.png
+  |  |  |-OH3-ESP_32_Cam-Page.png
+  |  |  |-OH3-ESP_8266_RFID-Page.png
+  |  |  |-OH3-ESP_8266_Sensors-Overview.png
+  |  |  |-OH3-ESP_8266_Sensors-Page.png
+  |  |  |-OH3-LogViewer.png
+  |  |  |-OH3-Overview-Location.png
+  |  |  |-OH3-Properties.png
+  |  |  |-OH3-Welcome.png
+  |  |  |-OH3_Temperature-analyse.png
+  |  |  |-RaspAP-Dashboard.png
+  |  |  |-Raspberry_3Bplus.jpg
+  |  |  |-RFID_RC522-Overview.png
+  |  |  |-RFID_RC522-Pinout.png
+  |  |-images.orig
+  |  |  |-ESP-32-Cam.png
+  |  |  |-ESP-8266_D1-mini.png
+  |  |  |-ESP_32_cam-Hardware.jpg
+  |  |  |-ESP_32_cam-Overview.png
+  |  |  |-ESP_32_Cam-Pinout.png
+  |  |  |-ESP_8266-D1_mini-Pinout.png
+  |  |  |-ESP_8266-D1_mini_RFID-Pined.png
+  |  |  |-ESP_8266-Device_overview.png
+  |  |  |-ESP_8266-Hardware.jpg
+  |  |  |-ESP_8266-Overview.png
+  |  |  |-ESP_8266_RFID-Hardware.jpg
+  |  |  |-ESP_8266_RFID-Overview.png
+  |  |  |-HABPanel-Camera.png
+  |  |  |-HABPanel-Door.png
+  |  |  |-HABPanel-Overview.png
+  |  |  |-HABPanel-Sensor.png
+  |  |  |-HABPanel-Streaming.png
+  |  |  |-HABPanel_first_floor.png
+  |  |  |-HABPanel_ground_floor.png
+  |  |  |-HABPanel_outdoor.png
+  |  |  |-HABPanel_second_floor.png
+  |  |  |-iRobot.jpg
+  |  |  |-Jarvis.jpg
+  |  |  |-Matrix_creator.jpg
+  |  |  |-OH3-ESP_32-Overview.png
+  |  |  |-OH3-ESP_32-Page.png
+  |  |  |-OH3-ESP_8266-Overview.png
+  |  |  |-OH3-ESP_8266-Page.png
+  |  |  |-OH3-ESP_8266_RFID-Page.png
+  |  |  |-OH3-LogViewer.png
+  |  |  |-OH3-Overview-Location.png
+  |  |  |-OH3-Properties.png
+  |  |  |-OH3-Welcome.png
+  |  |  |-OH3_Temperature-analyse.png
+  |  |  |-RaspAP-Dashboard.png
+  |  |  |-Raspberry_3b_plus.jpg
+  |  |  |-RFID_RC522-Overview.png
+  |  |  |-RFID_RC522-Pinout.png
+  |  |-Infrastructure.md
+  |  |-Integration_matrix.md
+  |  |-Links.md
+  |  |-OpenHAB3.md
+  |  |-OpenHABian.md
+  |  |-Provisioning_script.md
+  |  |-RaspAP.md
+  |  |-Tree.md
+  |-README.md
+  |-RELEASE.md
+  |-TODO.md
+````

@@ -1,0 +1,30 @@
+<div style="position: absolute;
+            background: rgba(0,0,0,0.5);
+            border-radius: 20px;
+            top: 50px; left: 50px;
+            width: 210px; height: 123px;">
+    <div class="row" id="ESP_NAME_Door" style="margin-top: 2px;">
+        <div class="col-xs-3" style="margin-left: 5px;" ng-click="sendCmd('ESP_NAME_RFID', '{\"doorip\":\"{{itemState(\'ESP_NAME_Network_IP\')}}\",\"cmd\":\"opendoor\"}')">
+            <widget-icon iconset="'freepik-household'" icon="'door'" colorize="false"  size="24" state="itemValue('ESP_NAME_Door')=='OFF' ? 'OFF':'ON'" />
+        </div>
+        <div class="col-xs-3 text-left"><span style="font-size: 12pt;">{{itemValue('ESP_NAME_Door')}}</span></div>
+    </div>
+    <div class="row" id="ESP_NAME_AccessOk_Name" style="margin-top: 2px;">
+        <div class="col-xs-3" style="margin-left: 5px;">
+            <widget-icon iconset="'freepik-household'" icon="'door-2'" colorize="false"  size="24" state="'ON'" />
+        </div>
+        <div class="col-xs-3 text-left"><span style="font-size: 12pt;">{{itemValue('ESP_NAME_AccessOk_Name')}}/{{itemValue('ESP_NAME_AccessOk_UID')}}</span></div>
+    </div>
+    <div class="row" id="ESP_NAME_AccessOk_Time" style="margin-top: 2px;">
+        <div class="col-xs-3 text-left" style="margin-left: 29px;"><span style="font-size: 9pt;">{{itemValue('ESP_NAME_AccessOk_Time')}}</span></div>
+    </div>
+    <div class="row" id="ESP_NAME_AccessKo_Name" style="margin-top: 2px;">
+        <div class="col-xs-3" style="margin-left: 5px;">
+            <widget-icon iconset="'freepik-household'" icon="'door-2'" colorize="false"  size="24" state="'OFF'" />
+        </div>
+        <div class="col-xs-3 text-left"><span style="font-size: 12pt;">{{itemValue('ESP_NAME_AccessKo_Name')}}/{{itemValue('ESP_NAME_AccessKo_UID')}}</span></div>
+    </div>
+    <div class="row" id="ESP_NAME_AccessKo_Time" style="margin-top: 2px;">
+        <div class="col-xs-3 text-left" style="margin-left: 29px;"><span style="font-size: 9pt;">{{itemValue('ESP_NAME_AccessKo_Time')}}</span></div>
+    </div>
+</div>

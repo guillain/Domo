@@ -1,0 +1,26 @@
+<div style="position: absolute;
+			background: rgba(0,0,0,0.5);
+			border-radius: 20px;
+			top: 50px; left: 50px;
+			width: 100px; height: 133px;">
+	<div class="row" id="ESP_NAME_System_Alert" style="margin-top: 2px;">
+		<div class="col-xs-3" style="margin-left: 5px;"><span><widget-icon iconset="'smarthome-set'" icon="'power'" size="24" state="itemValue('ESP_NAME_System_Alert')=='OFF' ? 'OFF':'ON'" /></span></div>
+		<div class="col-xs-3 text-left"><span style="font-size: 12pt;">{{itemValue('ESP_NAME_System_Alert')}}</span></div>
+	</div>
+	<div class="row" id="ESP_NAME_Sensor_Alert" style="margin-top: 2px;">
+		<div class="col-xs-3" style="margin-left: 5px;"><span><widget-icon iconset="'smarthome-set'" icon="'alarm'" size="24" state="itemValue('ESP_NAME_Sensor_Alert')=='OFF' ? 'OFF':'ON'" /></span></div>
+		<div class="col-xs-3 text-left"><span style="font-size: 12pt;">{{itemValue('ESP_NAME_Sensor_Alert')}}</span></div>
+	</div>
+	<div class="row" id="ESP_NAME_Sensor_Temperature" style="margin-top: 2px;">
+		<div class="col-xs-3" style="margin-left: 5px;"><span><widget-icon iconset="'smarthome-set'" icon="'temperature'" size="24" state="itemValue('ESP_NAME_Sensor_Temperature')>20 ? 'OFF':'ON'" /></span></div>
+		<div class="col-xs-3 text-left"><span style="font-size: 12pt;">{{itemValue('ESP_NAME_Sensor_Temperature')}}°C</span></div>
+	</div>
+	<div class="row" id="ESP_NAME_Sensor_Humidity" style="margin-top: 2px;">
+		<div class="col-xs-3" style="margin-left: 5px;"><span><widget-icon iconset="'smarthome-set'" icon="'drop'" size="24" state="itemValue('ESP_NAME_Sensor_Humidity')<50 ? 'OFF':'ON'" /></span></div>
+		<div class="col-xs-3 text-left"><span style="font-size: 12pt;">{{itemValue('ESP_NAME_Sensor_Humidity')}}%</span></div>
+	</div>
+	<div class="row" id="ESP_NAME_Sensor_Pressure" style="margin-top: 2px;">
+		<div class="col-xs-3" style="margin-left: 5px;"><span><widget-icon iconset="'smarthome-set'" icon="'thermostat'" size="24" state="itemValue('ESP_NAME_Sensor_Pressure')<1000 ? 'OFF':'ON'" /></span></div>
+		<div class="col-xs-3 text-left"><span style="font-size: 12pt;">{{'%.02f' | sprintf:itemValue('ESP_NAME_Sensor_Pressure')/10000}}<small style="font-size:8pt">MPa</small></span></div>
+	</div>
+</div>

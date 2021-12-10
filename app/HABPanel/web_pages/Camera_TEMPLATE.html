@@ -1,0 +1,24 @@
+<div style="position: absolute;
+            background: rgba(0,0,0,0.5);
+            border-radius: 20px;
+            top: 50px; left: 50px;
+            width: 140px; height: 87px;">
+    <div class="row" id="ESP_NAME_Lamp" style="margin-top: 2px;">
+        <div class="col-xs-3" style="margin-left: 5px;" ><div style="margin-top: 2px;" ng-click="sendCmd('ESP_NAME_Lamp', itemState('ESP_NAME_Lamp_OnOff')=='ON' ? '0' : '50')">
+            <widget-icon state="itemValue('ESP_NAME_Lamp_OnOff')=='OFF' ? 'OFF':'ON'" iconset="'freepik-household'" colorize="false" icon="'lamp'" size="24" />
+        </div></div>
+        <div class="col-xs-3 text-left"><span style="font-size: 12pt;">Lamp</span></div>
+    </div>
+    <div class="row" id="ESP_NAME_Face_Detection" style="margin-top: 2px;">
+        <div class="col-xs-3" style="margin-left: 5px;" ng-click="sendCmd('ESP_NAME_Face_Detection', itemState('ESP_NAME_Face_Detection')=='ON' ? '0' : '50')">
+            <widget-icon state="itemValue('ESP_NAME_Face_Detection')=='OFF' ? 'OFF':'ON'" iconset="'freepik-gadgets'" colorize="false" icon="'cctv'" size="24" />
+        </div>
+        <div class="col-xs-3 text-left"><span style="font-size: 12pt;">Detection</span></div>
+    </div>
+    <div class="row" id="ESP_NAME_Face_Recognition" style="margin-top: 2px;">
+        <div class="col-xs-3" style="margin-left: 5px;" ng-click="sendCmd('ESP_NAME_Face_Recognition', itemState('ESP_NAME_Face_Recognition')=='ON' ? '0' : '50')">
+            <widget-icon state="itemValue('ESP_NAME_Face_Recognition')=='OFF' ? 'OFF':'ON'" iconset="'freepik-housethings'" colorize="false" icon="'square-framed-mirror'" size="24" />
+        </div>
+        <div class="col-xs-3 text-left"><span style="font-size: 12pt;">Recognition</span></div>
+    </div>
+</div>

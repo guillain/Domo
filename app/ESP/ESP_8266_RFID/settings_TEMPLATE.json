@@ -1,0 +1,78 @@
+{
+  "command": "configfile",
+  "network": {
+    "bssid": "AP_BSSID",
+    "ssid": "AP_SSID",
+    "wmode": 0,
+    "hide": 0,
+    "pswd": "AP_SSID_PASSWORD",
+    "offtime": 0,
+    "dhcp": 0,
+    "ip": "ESP_IP_ADDRESS",
+    "subnet": "ESP_IP_SUBNET",
+    "gateway": "AP_IP_GW",
+    "dns": "AP_IP_GW",
+    "apip": "AP_IP_GW",
+    "apsubnet": "AP_IP_SUBNET"
+  },
+  "hardware": {
+    "readertype": 4,
+    "wgd0pin": 4,
+    "wgd1pin": 5,
+    "sspin": 15,
+    "rfidgain": 112,
+    "wifipin": 255,
+    "rtype": 1,
+    "ltype": 0,
+    "rpin": 5,
+    "rtime": 400,
+    "buttonpin": 255,
+    "doorstatpin": null,
+    "openlockpin": null,
+    "numrelays": 1,
+    "relay2": {
+      "rtype": 1,
+      "ltype": 0,
+      "rpin": 4,
+      "rtime": 400
+    },
+    "relay3": {
+      "rtype": 1,
+      "ltype": 0,
+      "rpin": 4,
+      "rtime": 400
+    },
+    "relay4": {
+      "rtype": 1,
+      "ltype": 0,
+      "rpin": 4,
+      "rtime": 400
+    }
+  },
+  "general": {
+    "hostnm": "ESP_NAME",
+    "restart": 86400,
+    "pswd": "ESP_RFID_PASSWORD"
+  },
+  "mqtt": {
+    "enabled": 1,
+    "host": "ESP_IP_PATTERN",
+    "port": 1883,
+    "topic": "ESP/8266/ESP_REFERENCE/rfid",
+    "user": "ESP_RFID_MQTT_USER",
+    "pswd": "ESP_RFID_MQTT_PASSWORD",
+    "syncrate": "60",
+    "mqttlog": 1
+  },
+  "ntp": {
+    "server": "ESP_IP_PATTERN",
+    "interval": 60,
+    "timezone": 1
+  },
+  "logmaintenance": {
+    "enabled": 1,
+    "rolloverkb": "10",
+    "maxlogfilesnumber": 5,
+    "spiffwatch": 0
+  }
+}

@@ -1,0 +1,36 @@
+[
+    {
+        "id": "14aa0e38dde9cdd7",
+        "type": "tab",
+        "label": "Functions",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7c9a10c05d5650d2",
+        "type": "comment",
+        "z": "14aa0e38dde9cdd7",
+        "name": "ESP-32",
+        "info": "",
+        "x": 710,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "5dbad92c3d6c4117",
+        "type": "function",
+        "z": "14aa0e38dde9cdd7",
+        "name": "status_lamp",
+        "func": "",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "context.global.esp32_status = function(msg, esp_ref, item) {\n    //var status = JSON.parse(msg.payload);\n    return {topic: item, payload: msg.payload[item]};\n}",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    }
+]

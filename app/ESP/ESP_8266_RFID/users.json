@@ -1,0 +1,33 @@
+{
+  "type": "esp-rfid-userbackup",
+  "version": "v0.6",
+  "list": [
+    {
+      "uid": "90000001",
+      "acctype": 99,
+      "acctype2": 0,
+      "acctype3": 0,
+      "acctype4": 0,
+      "username": "Guillain",
+      "validuntil": 2145916800
+    },
+    {
+      "uid": "9000002",
+      "acctype": 1,
+      "acctype2": 0,
+      "acctype3": 0,
+      "acctype4": 0,
+      "username": "Nina",
+      "validuntil": 2145916800
+    },
+    {
+      "uid": "90000003",
+      "acctype": 1,
+      "acctype2": 0,
+      "acctype3": 0,
+      "acctype4": 0,
+      "username": "Luca",
+      "validuntil": 2145916800
+    }
+  ]
+}

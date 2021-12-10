@@ -1,0 +1,11 @@
+.env
+.idea
+*.log
+*.back
+*.dat
+*.bin
+*.zip
+*.orig
+*.orig/
+generate/
+generated/

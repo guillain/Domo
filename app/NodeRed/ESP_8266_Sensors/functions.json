@@ -1,0 +1,70 @@
+[
+    {
+        "id": "14aa0e38dde9cdd7",
+        "type": "tab",
+        "label": "Functions",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f77c2374249f86e9",
+        "type": "function",
+        "z": "14aa0e38dde9cdd7",
+        "name": "sensor_alert",
+        "func": "",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "context.global.sensor_alert = function(msg, esp_ref) {\n    var alert = 0;\n\n    if ((msg.topic === 'ESP/8266/' + esp_ref + '/sound/state') ||\n        (msg.topic === 'ESP/8266/' + esp_ref + '/presence/state') ||\n        (msg.topic === 'ESP/8266/' + esp_ref + '/luminosity/state')) {\n        \n        if (Number(msg.payload) > 0){\n            alert = 1;\n        }\n    }\n    \n    return {topic: 'alert', payload: alert};\n}",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7eea409bd70935e2",
+        "type": "function",
+        "z": "14aa0e38dde9cdd7",
+        "name": "system_alert",
+        "func": "",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "context.global.system_alert = function(msg, esp_ref) {\n    var alert = 0;\n    \n    if ((msg.topic === 'ESP/8266/' + esp_ref + '/LWT') ||\n        (msg.topic === 'ESP/8266/' + esp_ref + '/mqtt/status')){\n        if (String(msg.payload) !== \"Connected\"){\n            alert = 1;\n        }\n    } else if (msg.topic === 'ESP/8266/' + esp_ref + '/system/uptime') {\n        if (Number(msg.payload) < 5){\n            alert = 1;\n        }\n    } else if (msg.topic === 'ESP/8266/' + esp_ref + '/system/load') {\n        if (Number(msg.payload) > 90){\n            alert = 1;\n        }\n    }\n    \n    return {topic: 'alert', payload: alert};\n}",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f342eff0babb0e4",
+        "type": "function",
+        "z": "14aa0e38dde9cdd7",
+        "name": "luminosity_state",
+        "func": "",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "context.global.luminosity_state = function(msg, esp_ref) {\n    var luminosity_state_value = 0;\n    \n    if (msg.topic === 'ESP/8266/' + esp_ref + '/luminosity/lux') {\n        if (Number(msg.payload) > 0) {\n            luminosity_state_value = 1;\n        }\n    }\n    \n    return {topic: 'state', payload: luminosity_state_value};\n}",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "419436bb0177cf03",
+        "type": "comment",
+        "z": "14aa0e38dde9cdd7",
+        "name": "ESP-8266",
+        "info": "",
+        "x": 210,
+        "y": 40,
+        "wires": []
+    }
+]
