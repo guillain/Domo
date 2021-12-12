@@ -1,0 +1,34 @@
+// -- -- Extra MQTT command -- -- //
+
+// Pump #1
+on extra_cmd#pump_1=1 do // ON
+    GPIO,12,0
+endon
+on extra_cmd#pump_1=0 do // OFF
+    GPIO,12,2
+endon
+
+// Pump #2
+on extra_cmd#pump_2=1 do // ON
+    GPIO,4,0
+endon
+on extra_cmd#pump_2=0 do // OFF
+    GPIO,4,2
+endon
+
+// Water 1
+on water_1#state=0 do // Start pump_1
+    GPIO,12,0
+    // Publish,%sysname%/extra_cmd/pump_1,1
+endon
+on water_1#state=1 do // Stop pump_1
+    GPIO,12,2
+endon
+
+// Water 2
+on water_2#state=0 do // Start pump_2
+    GPIO,4,0
+endon
+on water_2#state=1 do // Stop pump_2
+    GPIO,4,2
+endon

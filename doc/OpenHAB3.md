@@ -8,6 +8,7 @@
 3. [Templates](#templates)
     1. [Generate your templates](#generate-your-templates)
 4. [Links](#links)
+5. [Error & Fix](#error--fix)
 
 ## Installation
 
@@ -69,7 +70,7 @@ Create each single page as layout that you need and Ccopy/paste the content of t
 | ESP-8266-Sensors | 18_Bathroom               | Layout     | `generated/OpenHAB/web_pages/ESP_8266_Sensors/Page_18_Bathroom.yml`   |
 | ESP-8266-Sensors | 19_Nina                   | Layout     | `generated/OpenHAB/web_pages/ESP_8266_Sensors/Page_19_Nina.yml`       |
 | ESP-8266-Sensors | 20_Luca                   | Layout     | `generated/OpenHAB/web_pages/ESP_8266_Sensors/Page_20_Luca.yml`       |
-| ESP-8266-Sensors | 21_Friendroom             | Layout     | `generated/OpenHAB/web_pages/ESP_8266_Sensors/Page_21_Friendroom.yml` |
+| ESP-8266-Sensors | 21_Guestroom             | Layout     | `generated/OpenHAB/web_pages/ESP_8266_Sensors/Page_21_Guestroom.yml` |
 | ESP-8266-Sensors | 22_Guillain               | Layout     | `generated/OpenHAB/web_pages/ESP_8266_Sensors/Page_22_Guillain.yml`   |
 | ESP-8266-Sensors | 23_Deskroom               | Layout     | `generated/OpenHAB/web_pages/ESP_8266_Sensors/Page_23_Deskroom.yml`   |
 | ESP-8266-Sensors | 24_Garage                 | Layout     | `generated/OpenHAB/web_pages/ESP_8266_Sensors/Page_24_Garage.yml`     |
@@ -89,7 +90,47 @@ Create a MQTT broker thing.
         - Password: I let you imagine...
 
 ## Templates
-**WIP**: Summary and deep dive on the TEMPLATES usage & creation.
+
+### Files
+
+| Component | Sub component | Template file                                              | Generated file                                                         | Comment      |
+|-----------|---------------|------------------------------------------------------------|:-----------------------------------------------------------------------|--------------|
+| OpenHAB   | API           | `OpenHAB/API/ESP_32_Cam/items_TEMPLATE.json`               | `generated/OpenHAB/API/ESP_32_Cam/items_[ESP_NAME].json`               |              | 
+| OpenHAB   | API           | `OpenHAB/API/ESP_32_Cam/links_TEMPLATE.json`               | `generated/OpenHAB/API/ESP_32_Cam/links_[ESP_NAME].json`               |              | 
+| OpenHAB   | API           | `OpenHAB/API/ESP_32_Cam/rules_TEMPLATE.json`               | `generated/OpenHAB/API/ESP_32_Cam/rules_[ESP_NAME].json`               |              | 
+| OpenHAB   | API           | `OpenHAB/API/ESP_32_Cam/things_TEMPLATE.json`              | `generated/OpenHAB/API/ESP_32_Cam/things_[ESP_NAME].json`              |              | 
+| OpenHAB   | API           | `OpenHAB/API/ESP_8266_RFID/items_TEMPLATE.json`            | `generated/OpenHAB/API/ESP_8266_RFID/items_[ESP_NAME].json`            |              | 
+| OpenHAB   | API           | `OpenHAB/API/ESP_8266_RFID/links_TEMPLATE.json`            | `generated/OpenHAB/API/ESP_8266_RFID/links_[ESP_NAME].json`            |              | 
+| OpenHAB   | API           | `OpenHAB/API/ESP_8266_RFID/rules_TEMPLATE.json`            | `generated/OpenHAB/API/ESP_8266_RFID/rules_[ESP_NAME].json`            |              | 
+| OpenHAB   | API           | `OpenHAB/API/ESP_8266_RFID/things_TEMPLATE.json`           | `generated/OpenHAB/API/ESP_8266_RFID/things_[ESP_NAME].json`           |              | 
+| OpenHAB   | API           | `OpenHAB/API/ESP_8266_Sensors/items_TEMPLATE.json`         | `generated/OpenHAB/API/ESP_8266_Sensors/items_[ESP_NAME].json`         |              | 
+| OpenHAB   | API           | `OpenHAB/API/ESP_8266_Sensors/links_TEMPLATE.json`         | `generated/OpenHAB/API/ESP_8266_Sensors/links_[ESP_NAME].json`         |              | 
+| OpenHAB   | API           | `OpenHAB/API/ESP_8266_Sensors/rules_TEMPLATE.json`         | `generated/OpenHAB/API/ESP_8266_Sensors/rules_[ESP_NAME].json`         |              | 
+| OpenHAB   | API           | `OpenHAB/API/ESP_8266_Sensors/things_TEMPLATE.json`        | `generated/OpenHAB/API/ESP_8266_Sensors/things_[ESP_NAME].json`        |              |
+| OpenHAB   | Web pages     | `OpenHAB/web_pages/ESP_8266_RFID/Overview_HEADER.yml`      | `generated/OpenHAB/web_pages/ESP_8266_RFID/Overview.yml`               |              |
+| OpenHAB   | Web pages     | `OpenHAB/web_pages/ESP_8266_RFID/Overview_TEMPLATE.yml`    | `generated/OpenHAB/web_pages/ESP_8266_RFID/Overview_[ESP_NAME].yml`    |              |
+| OpenHAB   | Web pages     | `OpenHAB/web_pages/ESP_8266_RFID/Page_TEMPLATE.yml`        | `generated/OpenHAB/web_pages/ESP_8266_RFID/Page_[ESP_NAME].yml`        |              |
+| OpenHAB   | Web pages     | `OpenHAB/web_pages/ESP_32_Cam/Overview_HEADER.yml`         | `generated/OpenHAB/web_pages/ESP_32_Cam/Overview.yml`                  |              |
+| OpenHAB   | Web pages     | `OpenHAB/web_pages/ESP_32_Cam/Overview_TEMPLATE.yml`       | `generated/OpenHAB/web_pages/ESP_32_Cam/Overview_[ESP_NAME].yml`       |              |
+| OpenHAB   | Web pages     | `OpenHAB/web_pages/ESP_32_Cam/Page_TEMPLATE.yml`           | `generated/OpenHAB/web_pages/ESP_32_Cam/Page_[ESP_NAME].yml`           |              | 
+| OpenHAB   | Web pages     | `OpenHAB/web_pages/ESP_8266_Sensors/Overview_HEADER.yml`   | `generated/OpenHAB/web_pages/ESP_8266_Sensors/Overview.yml`            |              |
+| OpenHAB   | Web pages     | `OpenHAB/web_pages/ESP_8266_Sensors/Overview_TEMPLATE.yml` | `generated/OpenHAB/web_pages/ESP_8266_Sensors/Overview_[ESP_NAME].yml` |              |
+| OpenHAB   | Web pages     | `OpenHAB/web_pages/ESP_8266_Sensors/Page_TEMPLATE.yml`     | `generated/OpenHAB/web_pages/ESP_8266_Sensors/Page_[ESP_NAME].yml`     |              |
+| HABPanel  | Web pages     | `HABOpen/web_pages/ESP_8266_Sensors/RFID_TEMPLATE.yml`     | `generated/HABOpen/web_pages/ESP_8266_Sensors/RFID_[ESP_NAME].yml`     |              |
+
+### Constants
+
+- ESP_NAME
+- ESP_REFERENCE
+- ESP_IP_PATTERN
+- ESP_IP_ADDRESS
+- ESP_IP_SUBNET
+- ESP_PASSWORD
+- ESP_MQTT_USER
+- ESP_MQTT_PASSWORD
+- AP_SSID
+- AP_SSID_PASSWORD
+- OH_WEB_URL
 
 ### Generate your templates
 
@@ -103,13 +144,13 @@ for tag in "things" "items" "links" "rules"; do
     # Grabe the current conf
     _curl "GET" ${tag} > ${tag}.json
     
-    # Add the key words to be replaced, cf. `generate.sh` fct `_sed`
+    # Add the key words to be replaced, cf. `provisioning.sh` fct `_sed`
     # - ESP_REFERENCE <> esp_reference
     # - ESP_NAME <> esp_name
     # - ESP_LOCATION <> esp_location
     # - ESP_IP_ADDRESS <> esp_ip_address
     # - ESP_ICON <> esp_icon
-    # - OPENHAB_WEB_URL <> OH_WEB_URL
+    # - OH_WEB_URL <> OH_WEB_URL
     # - ROW_REFERENCE  <> PAGE_ROW_INDEX + row_index
     
     # Save the template
@@ -132,3 +173,13 @@ done
         { id: 'eclipse-smarthome-classic', name: 'Eclipse SmartHome Classic', type: 'oh2', oh2iconset: 'classic', colorize: false }
     ];
     ````
+  
+## Error & Fix
+- RRD corrupted file
+  - Error log: `[ERROR] [d4j.internal.RRD4jPersistenceService] - Could not create rrd4j database file '/var/lib/openhab/persistence/rrd4j/[RRD file name].rrd': Invalid file header. File [/var/lib/openhab/persistence/rrd4j/[RRD file name].rrd] is not a RRD4J RRD file`
+  - Fix: `grep 'Invalid file header' /var/log/openhab/openhab.log | awk -F"'" '{print $2}' | sort -u | xargs rm -f`
+- Permission issue
+  - Error log: `[ERROR] [d4j.internal.RRD4jPersistenceService] - Could not create rrd4j database file '/var/lib/openhab/persistence/rrd4j/[RRD file name].rrd': Read failed, file /var/lib/openhab/persistence/rrd4j/[RRD file name].rrd not mapped for I/O`
+  - Fix: `openhabian-config -> 10 | Apply Improvements -> 14 | Fix Permissions`
+  - _Tips_: ZRam can create this issue, thanks to uninstall and reboot your Py.
+- 

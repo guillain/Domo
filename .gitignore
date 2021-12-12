@@ -7,5 +7,4 @@
 *.zip
 *.orig
 *.orig/
-generate/
 generated/

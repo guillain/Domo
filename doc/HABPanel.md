@@ -39,7 +39,7 @@ They are used as background images of the HABPanel floor displays.
 
 ### Layout
 
-1. Create each single page as layout that you need
+1. Create each single page as layout that you need (cf. [filelist](#files))
 2. Copy/paste the content of the files generated in `generated/HABPanel` to populate the source code in each page.
 
 ## Templates

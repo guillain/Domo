@@ -20,7 +20,7 @@ $ find . | grep -v '.git' | grep -v '.idea' | sed -e "s/[^-][^\/]*\//  |/g" -e "
   |  |  |  |-rules1.txt
   |  |  |  |-rules2.txt
   |  |  |  |-rules4.txt
-  |  |-generate.sh
+  |  |-provisioning.sh
   |  |-HABPanel
   |  |  |-images
   |  |  |  |-first_floor.png

@@ -10,9 +10,9 @@
     "dhcp": 0,
     "ip": "ESP_IP_ADDRESS",
     "subnet": "ESP_IP_SUBNET",
-    "gateway": "AP_IP_GW",
-    "dns": "AP_IP_GW",
-    "apip": "AP_IP_GW",
+    "gateway": "AP_IP_ADDRESS",
+    "dns": "AP_IP_ADDRESS",
+    "apip": "AP_IP_ADDRESS",
     "apsubnet": "AP_IP_SUBNET"
   },
   "hardware": {
@@ -52,15 +52,15 @@
   "general": {
     "hostnm": "ESP_NAME",
     "restart": 86400,
-    "pswd": "ESP_RFID_PASSWORD"
+    "pswd": "ESP_PASSWORD"
   },
   "mqtt": {
     "enabled": 1,
     "host": "ESP_IP_PATTERN",
     "port": 1883,
     "topic": "ESP/8266/ESP_REFERENCE/rfid",
-    "user": "ESP_RFID_MQTT_USER",
-    "pswd": "ESP_RFID_MQTT_PASSWORD",
+    "user": "ESP_MQTT_USER",
+    "pswd": "ESP_MQTT_PASSWORD",
     "syncrate": "60",
     "mqttlog": 1
   },

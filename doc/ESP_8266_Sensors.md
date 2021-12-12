@@ -47,7 +47,8 @@ EAsyMega
 ## Setup
 
 1. Uncompress the zip file `ESPEasy-Mega-VERSION.zip` downloaded
-2. Use the file TEMPLATE provided for the settings and the user file to configure your firmware/device:
+2. Use the file `ESP/ESP_8266_Sensors/Custom_TEMPLATE.h` provided for your own settings (even if it managed by the `provisionig` script) and copy it to `ESPEasy-Mega-VERSION/src`
+3. Copy also the libraries `ESP/ESP_8266_Sensors/lib/*.ino` in the targeted source folder `ESPEasy-Mega-VERSION/src`
 
 ## Templates
 
@@ -56,6 +57,10 @@ EAsyMega
 | Component | Sub component | Template file                                              | Generated file                                                         | Comment      |
 |-----------|---------------|------------------------------------------------------------|:-----------------------------------------------------------------------|--------------|
 | ESP       | PlatformIO    | `ESP/ESP_8266_Sensors/platformio.ini`                      | `generated/ESP/ESP_8266_Sensors/platformio.ini`                        |              |
+| ESP       | Firmware      | `ESP/ESP_8266_Sensors/Custom_TEMPLATE.h`                   | `generated/ESP/ESP_8266_Sensors/Custom_[ESP_NAME].h`                   |              |
+| ESP       | Firmware      | `ESP/ESP_8266_Sensors/lib/_P028_BME280.ino`                | `generated/ESP/ESP_8266_Sensors/lib/_P028_BME280.ino`                  |              |
+| ESP       | Firmware      | `ESP/ESP_8266_Sensors/lib/_P045_MPU6050.ino`               | `generated/ESP/ESP_8266_Sensors/lib/_P045_MPU6050.ino`                 |              |
+| ESP       | Firmware      | `ESP/ESP_8266_Sensors/lib/_P111_RC522_RFID.ino`            | `generated/ESP/ESP_8266_Sensors/lib/_P111_RC522_RFID.ino`              |              |
 | ESP       | Firmware      | `ESP/ESP_8266_Sensors/config.dat`                          | `generated/ESP/ESP_8266_Sensors/config.dat`                            |              |
 | ESP       | Firmware      | `ESP/ESP_8266_Sensors/rules1.txt`                          | `generated/ESP/ESP_8266_Sensors/rules1.txt`                            |              |
 | ESP       | Firmware      | `ESP/ESP_8266_Sensors/rules2.txt`                          | `generated/ESP/ESP_8266_Sensors/rules2.txt`                            |              |
@@ -76,7 +81,7 @@ EAsyMega
 - ESP_NAME
 - ESP_REFERENCE
 - ROW_REFERENCE
-- OPENHAB_WEB_URL
+- OH_WEB_URL
 
 ## Programming
 

@@ -25,123 +25,121 @@
 # undef BUILD_GIT
 #endif // ifdef BUILD_GIT
 
-#define BUILD_GIT           "My Build: "  __DATE__ " "  __TIME__
+#define BUILD_GIT                            "Domo build: "  __DATE__ " "  __TIME__
 
 
-#define DEFAULT_NAME        "MyEspEasyDevice"                        // Enter your device friendly name
-#define UNIT                0                                        // Unit Number
-#define DEFAULT_DELAY       60                                       // Sleep Delay in seconds
+#define DEFAULT_NAME                         "ESP_NAME"              // Enter your device friendly name
+#define UNIT                                 ESP_REFERENCE           // Unit Number
+#define DEFAULT_DELAY                        60                      // Sleep Delay in seconds
 
 // --- Wifi AP Mode (when your Wifi Network is not reachable) ----------------------------------------
-#define DEFAULT_AP_IP       192, 168, 4, 1                           // Enter IP address (comma separated) for AP (config) mode
-#define DEFAULT_AP_SUBNET   255, 255, 255, 0                         // Enter IP address (comma separated) for AP (config) mode
-#define DEFAULT_AP_KEY      "configesp"                              // Enter network WPA key for AP (config) mode
+#define DEFAULT_AP_IP                        192, 168, 4, 1          // Enter IP address (comma separated) for AP (config) mode
+#define DEFAULT_AP_SUBNET                    255, 255, 255, 0        // Enter IP address (comma separated) for AP (config) mode
+#define DEFAULT_AP_KEY                       "ESP_PASSWORD"          // Enter network WPA key for AP (config) mode
 
 // --- Wifi Client Mode -----------------------------------------------------------------------------
-#define DEFAULT_SSID                         "MyHomeSSID"            // Enter your network SSID
-#define DEFAULT_KEY                          "MySuperSecretPassword" // Enter your network WPA key
-#define DEFAULT_SSID2                        ""                      // Enter your fallback network SSID
-#define DEFAULT_KEY2                         ""                      // Enter your fallback network WPA key
-#define DEFAULT_WIFI_INCLUDE_HIDDEN_SSID     false                   // Allow to connect to hidden SSID APs
-#define DEFAULT_USE_STATIC_IP                false                   // (true|false) enabled or disabled static IP
-#define DEFAULT_IP                           "192.168.0.50"          // Enter your IP address
-#define DEFAULT_DNS                          "192.168.0.1"           // Enter your DNS
-#define DEFAULT_GW                           "192.168.0.1"           // Enter your Gateway
-#define DEFAULT_SUBNET                       "255.255.255.0"         // Enter your Subnet
-#define DEFAULT_IPRANGE_LOW                  "0.0.0.0"               // Allowed IP range to access webserver
-#define DEFAULT_IPRANGE_HIGH                 "255.255.255.255"       // Allowed IP range to access webserver
+#define DEFAULT_SSID                         "AP_SSID"               // Enter your network SSID
+#define DEFAULT_KEY                          "AP_SSID_PASSWORD"      // Enter your network WPA key
+#define DEFAULT_SSID2                        "AP_SSID_backup"        // Enter your fallback network SSID
+#define DEFAULT_KEY2                         "AP_SSID_PASSWORD"      // Enter your fallback network WPA key
+#define DEFAULT_WIFI_INCLUDE_HIDDEN_SSID     true                    // Allow to connect to hidden SSID APs
+#define DEFAULT_USE_STATIC_IP                true                    // (true|false) enabled or disabled static IP
+#define DEFAULT_IP                           "ESP_IP_ADDRESS"        // Enter your IP address
+#define DEFAULT_DNS                          "ESP_IP_SUBNET"         // Enter your DNS
+#define DEFAULT_GW                           "AP_IP_ADDRESS"         // Enter your Gateway
+#define DEFAULT_SUBNET                       "AP_IP_SUBNET"          // Enter your Subnet
+#define DEFAULT_IPRANGE_LOW                  "ESP_IP_PATTERN00"      // Allowed IP range to access webserver
+#define DEFAULT_IPRANGE_HIGH                 "ESP_IP_PATTERN99"      // Allowed IP range to access webserver
 #define DEFAULT_IP_BLOCK_LEVEL               1                       // 0: ALL_ALLOWED  1: LOCAL_SUBNET_ALLOWED  2:
 // ONLY_IP_RANGE_ALLOWED
-#define DEFAULT_ADMIN_USERNAME               "admin"
-#define DEFAULT_ADMIN_PASS                   ""
+#define DEFAULT_ADMIN_USERNAME               "ESP_USERNAME"
+#define DEFAULT_ADMIN_PASS                   "ESP_PASSWORD"
 
-#define DEFAULT_WIFI_CONNECTION_TIMEOUT      10000 // minimum timeout in ms for WiFi to be connected.
-#define DEFAULT_WIFI_FORCE_BG_MODE           false // when set, only allow to connect in 802.11B or G mode (not N)
-#define DEFAULT_WIFI_RESTART_WIFI_CONN_LOST  false // Perform wifi off and on when connection was lost.
-#define DEFAULT_ECO_MODE                     false // When set, make idle calls between executing tasks.
-#define DEFAULT_WIFI_NONE_SLEEP              false // When set, the wifi will be set to no longer sleep (more power
+#define DEFAULT_WIFI_CONNECTION_TIMEOUT      10000                   // minimum timeout in ms for WiFi to be connected.
+#define DEFAULT_WIFI_FORCE_BG_MODE           false                   // when set, only allow to connect in 802.11B or G mode (not N)
+#define DEFAULT_WIFI_RESTART_WIFI_CONN_LOST  true                    // Perform wifi off and on when connection was lost.
+#define DEFAULT_ECO_MODE                     false                   // When set, make idle calls between executing tasks.
+#define DEFAULT_WIFI_NONE_SLEEP              false                   // When set, the wifi will be set to no longer sleep (more power
 // used and need reboot to reset mode)
-#define DEFAULT_GRATUITOUS_ARP               false // When set, the node will send periodical gratuitous ARP
-                                                   // packets to announce itself.
-#define DEFAULT_TOLERANT_LAST_ARG_PARSE      false // When set, the last argument of some commands will be parsed to the end of the line
-                                                   // See: https://github.com/letscontrolit/ESPEasy/issues/2724
-#define DEFAULT_SEND_TO_HTTP_ACK             false // Wait for ack with SendToHttp command.
+#define DEFAULT_GRATUITOUS_ARP               false                   // When set, the node will send periodical gratuitous ARP
+                                                                     // packets to announce itself.
+#define DEFAULT_TOLERANT_LAST_ARG_PARSE      false                   // When set, the last argument of some commands will be parsed to the end of the line
+                                                                     // See: https://github.com/letscontrolit/ESPEasy/issues/2724
+#define DEFAULT_SEND_TO_HTTP_ACK             true                    // Wait for ack with SendToHttp command.
 
-#define DEFAULT_AP_DONT_FORCE_SETUP          false // Allow optional usage of Sensor without WIFI avaiable // When set you can use the Sensor in AP-Mode without beeing forced to /setup
-#define DEFAULT_DONT_ALLOW_START_AP          false // Usually the AP will be started when no WiFi is defined, or the defined one cannot be found. This flag may prevent it.
+#define DEFAULT_AP_DONT_FORCE_SETUP          false                   // Allow optional usage of Sensor without WIFI avaiable // When set you can use the Sensor in AP-Mode without beeing forced to /setup
+#define DEFAULT_DONT_ALLOW_START_AP          false                   // Usually the AP will be started when no WiFi is defined, or the defined one cannot be found. This flag may prevent it.
 
 // --- Default Controller ------------------------------------------------------------------------------
-#define DEFAULT_CONTROLLER   false                                          // true or false enabled or disabled, set 1st controller
-                                                                            // defaults
-#define DEFAULT_CONTROLLER_ENABLED true                                     // Enable default controller by default
-#define DEFAULT_CONTROLLER_USER    ""                                       // Default controller user
-#define DEFAULT_CONTROLLER_PASS    ""                                       // Default controller Password
+#define DEFAULT_CONTROLLER                   true                    // true or false enabled or disabled, set 1st controller defaults
+#define DEFAULT_CONTROLLER_ENABLED           true                    // Enable default controller by default
+#define DEFAULT_CONTROLLER_USER              "ESP_MQTT_USER"         // Default controller user
+#define DEFAULT_CONTROLLER_PASS              "ESP_MQTT_PASSWORD"     // Default controller Password
 
 // using a default template, you also need to set a DEFAULT PROTOCOL to a suitable MQTT protocol !
-#define DEFAULT_PUB         "sensors/espeasy/%sysname%/%tskname%/%valname%" // Enter your pub
-#define DEFAULT_SUB         "sensors/espeasy/%sysname%/#"                   // Enter your sub
-#define DEFAULT_SERVER      "192.168.0.8"                                   // Enter your Server IP address
-#define DEFAULT_SERVER_HOST ""                                              // Server hostname
-#define DEFAULT_SERVER_USEDNS false                                         // true: Use hostname.  false: use IP
-#define DEFAULT_USE_EXTD_CONTROLLER_CREDENTIALS   false                     // true: Allow longer user credentials for controllers
+#define DEFAULT_PUB                          "ESP/%unit%/%tskname%/%valname%" // Enter your pub
+#define DEFAULT_SUB                          "ESP/%unit%/#"          // Enter your sub
+#define DEFAULT_SERVER                       "AP_IP_ADDRESS"         // Enter your Server IP address
+#define DEFAULT_SERVER_HOST                  "domo"                  // Server hostname
+#define DEFAULT_SERVER_USEDNS                false                   // true: Use hostname.  false: use IP
+#define DEFAULT_USE_EXTD_CONTROLLER_CREDENTIALS   false              // true: Allow longer user credentials for controllers
 
-#define DEFAULT_PORT        8080                                            // Enter your Server port value
+#define DEFAULT_PORT                         8080                    // Enter your Server port value
+#define DEFAULT_PROTOCOL                     5                       // Protocol used for controller communications
+                                                                     //   0 = Stand-alone (no controller set)
+                                                                     //   1 = Domoticz HTTP
+                                                                     //   2 = Domoticz MQTT
+                                                                     //   3 = Nodo Telnet
+                                                                     //   4 = ThingSpeak
+                                                                     //   5 = Home Assistant (openHAB) MQTT
+                                                                     //   6 = PiDome MQTT
+                                                                     //   7 = EmonCMS
+                                                                     //   8 = Generic HTTP
+                                                                     //   9 = FHEM HTTP
 
-#define DEFAULT_PROTOCOL    0                                               // Protocol used for controller communications
-                                                                            //   0 = Stand-alone (no controller set)
-                                                                            //   1 = Domoticz HTTP
-                                                                            //   2 = Domoticz MQTT
-                                                                            //   3 = Nodo Telnet
-                                                                            //   4 = ThingSpeak
-                                                                            //   5 = Home Assistant (openHAB) MQTT
-                                                                            //   6 = PiDome MQTT
-                                                                            //   7 = EmonCMS
-                                                                            //   8 = Generic HTTP
-                                                                            //   9 = FHEM HTTP
+#define DEFAULT_PIN_I2C_SDA                   5
+#define DEFAULT_PIN_I2C_SCL                   4
+#define DEFAULT_I2C_CLOCK_SPEED               400000                 // Use 100 kHz if working with old I2C chips
+#define USE_I2C_DEVICE_SCAN                   true
 
-#define DEFAULT_PIN_I2C_SDA                     4
-#define DEFAULT_PIN_I2C_SCL                     5
-#define DEFAULT_I2C_CLOCK_SPEED                 400000            // Use 100 kHz if working with old I2C chips
-#define USE_I2C_DEVICE_SCAN                     true
+#define DEFAULT_SPI                           0                      //0=disabled 1=enabled and for ESP32 there is option 2 =HSPI
 
-#define DEFAULT_SPI                             0                 //0=disabled 1=enabled and for ESP32 there is option 2 =HSPI
+#define DEFAULT_PIN_STATUS_LED                (-1)
+#define DEFAULT_PIN_STATUS_LED_INVERSED       true
 
-#define DEFAULT_PIN_STATUS_LED                  (-1)
-#define DEFAULT_PIN_STATUS_LED_INVERSED         true
-
-#define DEFAULT_PIN_RESET_BUTTON                (-1)
+#define DEFAULT_PIN_RESET_BUTTON              (-1)
 
 
-#define DEFAULT_USE_RULES                       false             // (true|false) Enable Rules?
-#define DEFAULT_RULES_OLDENGINE                 true
+#define DEFAULT_USE_RULES                     true                    // (true|false) Enable Rules?
+#define DEFAULT_RULES_OLDENGINE               true
 
-#define DEFAULT_MQTT_RETAIN                     false             // (true|false) Retain MQTT messages?
-#define DEFAULT_MQTT_DELAY                      100               // Time in milliseconds to retain MQTT messages
-#define DEFAULT_MQTT_LWT_TOPIC                  ""                // Default lwt topic
-#define DEFAULT_MQTT_LWT_CONNECT_MESSAGE        "Connected"       // Default lwt message
-#define DEFAULT_MQTT_LWT_DISCONNECT_MESSAGE     "Connection Lost" // Default lwt message
-#define DEFAULT_MQTT_USE_UNITNAME_AS_CLIENTID   0
+#define DEFAULT_MQTT_RETAIN                   false                   // (true|false) Retain MQTT messages?
+#define DEFAULT_MQTT_DELAY                    100                     // Time in milliseconds to retain MQTT messages
+#define DEFAULT_MQTT_LWT_TOPIC                ""                      // Default lwt topic
+#define DEFAULT_MQTT_LWT_CONNECT_MESSAGE      "Connected"             // Default lwt message
+#define DEFAULT_MQTT_LWT_DISCONNECT_MESSAGE   "Disconnected"          // Default lwt message
+#define DEFAULT_MQTT_USE_UNITNAME_AS_CLIENTID 1
 
-#define DEFAULT_USE_NTP                         false             // (true|false) Use NTP Server
-#define DEFAULT_NTP_HOST                        ""                // NTP Server Hostname
-#define DEFAULT_TIME_ZONE                       0                 // Time Offset (in minutes)
-#define DEFAULT_USE_DST                         false             // (true|false) Use Daily Time Saving
+#define DEFAULT_USE_NTP                       true                    // (true|false) Use NTP Server
+#define DEFAULT_NTP_HOST                      "domo"                  // NTP Server Hostname
+#define DEFAULT_TIME_ZONE                     0                       // Time Offset (in minutes)
+#define DEFAULT_USE_DST                       false                   // (true|false) Use Daily Time Saving
 
-#define DEFAULT_LATITUDE                        0.0f              // Default Latitude  
-#define DEFAULT_LONGITUDE                       0.0f              // Default Longitude
+#define DEFAULT_LATITUDE                      0.0f                    // Default Latitude
+#define DEFAULT_LONGITUDE                     0.0f                    // Default Longitude
 
-#define DEFAULT_SYSLOG_IP                       ""                // Syslog IP Address
-#define DEFAULT_SYSLOG_LEVEL                    0                 // Syslog Log Level
-#define DEFAULT_SERIAL_LOG_LEVEL                LOG_LEVEL_INFO    // Serial Log Level
-#define DEFAULT_WEB_LOG_LEVEL                   LOG_LEVEL_INFO    // Web Log Level
-#define DEFAULT_SD_LOG_LEVEL                    0                 // SD Card Log Level
-#define DEFAULT_USE_SD_LOG                      false             // (true|false) Enable Logging to the SD card
+#define DEFAULT_SYSLOG_IP                     "AP_IP_ADDRESS"         // Syslog IP Address
+#define DEFAULT_SYSLOG_LEVEL                  0                       // Syslog Log Level
+#define DEFAULT_SERIAL_LOG_LEVEL              LOG_LEVEL_INFO          // Serial Log Level
+#define DEFAULT_WEB_LOG_LEVEL                 LOG_LEVEL_INFO          // Web Log Level
+#define DEFAULT_SD_LOG_LEVEL                  0                       // SD Card Log Level
+#define DEFAULT_USE_SD_LOG                    false                   // (true|false) Enable Logging to the SD card
 
-#define DEFAULT_USE_SERIAL                      true              // (true|false) Enable Logging to the Serial Port
-#define DEFAULT_SERIAL_BAUD                     115200            // Serial Port Baud Rate
-#define DEFAULT_SYSLOG_FACILITY                 0                 // kern
+#define DEFAULT_USE_SERIAL                    true                    // (true|false) Enable Logging to the Serial Port
+#define DEFAULT_SERIAL_BAUD                   115200                  // Serial Port Baud Rate
+#define DEFAULT_SYSLOG_FACILITY               0                       // kern
 
-#define DEFAULT_SYNC_UDP_PORT                   0                 // Used for ESPEasy p2p. (IANA registered port: 8266)
+#define DEFAULT_SYNC_UDP_PORT                 0                       // Used for ESPEasy p2p. (IANA registered port: 8266)
 
 
 #define BUILD_NO_DEBUG
@@ -256,17 +254,17 @@ static const char DATA_ESPEASY_DEFAULT_MIN_CSS[] PROGMEM = {
 // #define USE_SERVO
 
 
-// #define USES_P001   // Switch
+#define USES_P001   // Switch
 // #define USES_P002   // ADC
 // #define USES_P003   // Pulse
 // #define USES_P004   // Dallas
 // #define USES_P005   // DHT
 // #define USES_P006   // BMP085
 // #define USES_P007   // PCF8591
-// #define USES_P008   // RFID
+#define USES_P008   // RFID
 // #define USES_P009   // MCP
 
-// #define USES_P010   // BH1750
+#define USES_P010   // BH1750
 // #define USES_P011   // PME
 // #define USES_P012   // LCD
 // #define USES_P013   // HCSR04
@@ -282,17 +280,17 @@ static const char DATA_ESPEASY_DEFAULT_MIN_CSS[] PROGMEM = {
 // #define USES_P023   // OLED
 // #define USES_P024   // MLX90614
 // #define USES_P025   // ADS1115
-// #define USES_P026   // SysInfo
+#define USES_P026   // SysInfo
 // #define USES_P027   // INA219
 // #define USES_P028   // BME280
-// #define USES_P029   // Output
+#define USES_P029   // Output
 
 // #define USES_P031   // SHT1X
 // #define USES_P032   // MS5611
-// #define USES_P033   // Dummy
+#define USES_P033   // Dummy
 // #define USES_P034   // DHT12
 // #define USES_P036   // FrameOLED
-// #define USES_P037   // MQTTImport
+#define USES_P037   // MQTTImport
 // #define USES_P038   // NeoPixel
 // #define USES_P039   // Environment - Thermocouple
 
@@ -301,15 +299,15 @@ static const char DATA_ESPEASY_DEFAULT_MIN_CSS[] PROGMEM = {
 // #define USES_P042   // Candle
 // #define USES_P043   // ClkOutput
 // #define USES_P044   // P1WifiGateway
-// #define USES_P045   // MPU6050
+#define USES_P045   // MPU6050
 // #define USES_P046   // VentusW266
-// #define USES_P047   // I2C_soil_misture
+#define USES_P047   // I2C_soil_misture
 // #define USES_P048   // Motoshield_v2
 // #define USES_P049   // MHZ19
 
 // #define USES_P050   // TCS34725 RGB Color Sensor with IR filter and White LED
 // #define USES_P051   // AM2320
-// #define USES_P052   // SenseAir
+#define USES_P052   // SenseAir
 // #define USES_P053   // PMSx003
 // #define USES_P054   // DMX512
 // #define USES_P055   // Chiming
@@ -326,7 +324,7 @@ static const char DATA_ESPEASY_DEFAULT_MIN_CSS[] PROGMEM = {
 // #define USES_P065   // DRF0299
 // #define USES_P066   // VEML6040
 // #define USES_P067   // HX711_Load_Cell
-// #define USES_P068   // SHT3x
+#define USES_P068   // SHT3x
 // #define USES_P069   // LM75A
 
 // #define USES_P070   // NeoPixel_Clock
@@ -341,8 +339,8 @@ static const char DATA_ESPEASY_DEFAULT_MIN_CSS[] PROGMEM = {
 // #define USES_P079   // Wemos Motoshield
 
 // #define USES_P080   // iButton Sensor  DS1990A
-// #define USES_P081   // Cron
-// #define USES_P082   // GPS
+#define USES_P081   // Cron
+#define USES_P082   // GPS
 // #define USES_P083   // SGP30
 // #define USES_P084   // VEML6070
 // #define USES_P085   // AcuDC24x
@@ -368,11 +366,11 @@ static const char DATA_ESPEASY_DEFAULT_MIN_CSS[] PROGMEM = {
 // #define USES_P103   // Atlas Scientific EZO Sensors (pH, ORP, EZO, DO)
 // #define USES_P104   // MAX7219 dotmatrix
 // #define USES_P105   // AHT10/20/21
-// #define USES_P106   // BME680
+#define USES_P106   // BME680
 // #define USES_P107   // Si1145
 // #define USES_P109   // ThermoOLED
 // #define USES_P110   // VL53L0X Time of Flight sensor
-// #define USES_P111   // RF522 RFID reader
+#define USES_P111   // RF522 RFID reader
 // #define USES_P112   // AS7265x
 // #define USES_P113   // VL53L1X ToF
 // #define USES_P114   // VEML6075
@@ -403,7 +401,7 @@ static const char DATA_ESPEASY_DEFAULT_MIN_CSS[] PROGMEM = {
 // #define USES_C002   // Domoticz MQTT
 // #define USES_C003   // Nodo telnet
 // #define USES_C004   // ThingSpeak
-// #define USES_C005   // Home Assistant (openHAB) MQTT
+#define USES_C005   // Home Assistant (openHAB) MQTT
 // #define USES_C006   // PiDome MQTT
 // #define USES_C007   // Emoncms
 // #define USES_C008   // Generic HTTP
@@ -427,7 +425,16 @@ static const char DATA_ESPEASY_DEFAULT_MIN_CSS[] PROGMEM = {
 
 
 // #define USES_N001   // Email
-// #define USES_N002   // Buzzer
+#define USES_N002   // Buzzer
 
+/*
+ #######################################################################################################
+ ###########     Domo custom import
+ #######################################################################################################
+ */
+
+#define USES_P028   // BME280
+#define USES_P111   // RC522_RFID
+#define USES_P045   // MPU6050
 
 #endif // ESPEASY_CUSTOM_H

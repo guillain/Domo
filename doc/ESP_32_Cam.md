@@ -71,7 +71,7 @@ It comes from the release with all necessary files into the archive.
 - ESP_REFERENCE
 - AP_SSID
 - AP_SSID_PASSWORD
-- OPENHAB_WEB_URL
+- OH_WEB_URL
 
 #### Warning
 

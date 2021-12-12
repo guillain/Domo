@@ -92,6 +92,7 @@ As example, ESP 32 and 8266 setup and templates are provided with the following 
 - [Infrastructure](doc/Infrastructure.md#overview)
 - [Integration matrix](doc/Integration_matrix.md)
 - [Provisioning script](doc/Provisioning_script.md)
+- [Naming convention](/doc/Naming_convention.md)
 
 ## Installation
 

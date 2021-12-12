@@ -1,7 +1,7 @@
 [
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Category",
+		"link": "OH_WEB_URL/rest/items/Category",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -17,7 +17,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/System",
+		"link": "OH_WEB_URL/rest/items/System",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -33,7 +33,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Network",
+		"link": "OH_WEB_URL/rest/items/Network",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -49,7 +49,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Preferences",
+		"link": "OH_WEB_URL/rest/items/Preferences",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -65,7 +65,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Camera",
+		"link": "OH_WEB_URL/rest/items/Camera",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -81,7 +81,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Sensor",
+		"link": "OH_WEB_URL/rest/items/Sensor",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -97,7 +97,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Entry",
+		"link": "OH_WEB_URL/rest/items/Entry",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -113,7 +113,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/FirstFloor",
+		"link": "OH_WEB_URL/rest/items/FirstFloor",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -129,7 +129,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Garden",
+		"link": "OH_WEB_URL/rest/items/Garden",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -145,11 +145,11 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/LivingRoom",
+		"link": "OH_WEB_URL/rest/items/Livingroom",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
-		"name": "LivingRoom",
+		"name": "Livingroom",
 		"label": "Living Room",
 		"category": "groundfloor",
 		"tags": [
@@ -161,7 +161,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Lab",
+		"link": "OH_WEB_URL/rest/items/Lab",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -177,7 +177,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Guillain",
+		"link": "OH_WEB_URL/rest/items/Guillain",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -193,11 +193,11 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/BathRoom",
+		"link": "OH_WEB_URL/rest/items/Bathroom",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
-		"name": "BathRoom",
+		"name": "Bathroom",
 		"label": "bathroom",
 		"category": "bath",
 		"tags": [
@@ -209,7 +209,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Outdoor",
+		"link": "OH_WEB_URL/rest/items/Outdoor",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -223,7 +223,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Garage",
+		"link": "OH_WEB_URL/rest/items/Garage",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -239,7 +239,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/SecondFloor",
+		"link": "OH_WEB_URL/rest/items/SecondFloor",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -255,7 +255,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Kitchen",
+		"link": "OH_WEB_URL/rest/items/Kitchen",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -271,12 +271,12 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/FriendRoom",
+		"link": "OH_WEB_URL/rest/items/Guestroom",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
-		"name": "FriendRoom",
-		"label": "Friend room",
+		"name": "Guestroom",
+		"label": "Guest room",
 		"category": "bedroom_red",
 		"tags": [
 			"Location"
@@ -287,7 +287,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Nina",
+		"link": "OH_WEB_URL/rest/items/Nina",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -303,7 +303,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Luca",
+		"link": "OH_WEB_URL/rest/items/Luca",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -319,7 +319,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/House",
+		"link": "OH_WEB_URL/rest/items/House",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
@@ -333,12 +333,12 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/Ground",
+		"link": "OH_WEB_URL/rest/items/Ground",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",
 		"name": "Ground",
-		"label": "0 - Ground floor",
+		"label": "0 - Ground",
 		"category": "groundfloor",
 		"tags": [
 			"Location"
@@ -349,7 +349,7 @@
 	},
 	{
 		"members": [],
-		"link": "OPENHAB_WEB_URL/rest/items/DeskRoom",
+		"link": "OH_WEB_URL/rest/items/DeskRoom",
 		"state": "NULL",
 		"editable": true,
 		"type": "Group",

@@ -1,7 +1,7 @@
 [
     {
         "members": [],
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME",
         "state": "NULL",
         "editable": true,
         "type": "Group",
@@ -16,7 +16,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_Name",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System_Name",
         "state": "ESP_NAME",
         "stateDescription": {
             "pattern": "%s",
@@ -37,7 +37,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_WebActivity",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Network_WebActivity",
         "state": "27239",
         "stateDescription": {
             "minimum": 0,
@@ -61,7 +61,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Sensor_Presence",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Sensor_Presence",
         "state": "OFF",
         "stateDescription": {
             "pattern": "%s",
@@ -83,7 +83,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_FreeRAM",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System_FreeRAM",
         "state": "20568",
         "stateDescription": {
             "minimum": 0,
@@ -108,7 +108,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_MQTT_ImportStatus",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_MQTT_ImportStatus",
         "state": "NULL",
         "stateDescription": {
             "pattern": "%s",
@@ -214,7 +214,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_Status",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System_Status",
         "state": "Connected",
         "stateDescription": {
             "pattern": "%s",
@@ -320,7 +320,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Sensor_Luminosity",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Sensor_Luminosity",
         "state": "23",
         "stateDescription": {
             "minimum": 0,
@@ -345,7 +345,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Sensor_LuminosityState",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Sensor_LuminosityState",
         "state": "ON",
         "stateDescription": {
             "pattern": "%s",
@@ -367,7 +367,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_Reboot",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System_Reboot",
         "state": "Connected",
         "stateDescription": {
             "pattern": "%s",
@@ -466,7 +466,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_IP",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Network_IP",
         "state": "10.1.1.116",
         "stateDescription": {
             "pattern": "%s",
@@ -487,7 +487,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Sensor_Sound",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Sensor_Sound",
         "state": "OFF",
         "stateDescription": {
             "pattern": "%s",
@@ -509,7 +509,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_Uptime",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System_Uptime",
         "state": "1900",
         "stateDescription": {
             "minimum": 0,
@@ -533,7 +533,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_Unit",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System_Unit",
         "state": "16",
         "stateDescription": {
             "pattern": "%s",
@@ -554,7 +554,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Sensor_Humidity",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Sensor_Humidity",
         "state": "0",
         "stateDescription": {
             "minimum": 0,
@@ -579,7 +579,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_Subnet",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Network_Subnet",
         "state": "255.255.255.0",
         "stateDescription": {
             "pattern": "%s",
@@ -600,7 +600,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_BuildDate",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System_BuildDate",
         "state": "Oct    5 2021",
         "stateDescription": {
             "pattern": "%s",
@@ -621,7 +621,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_Time",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System_Time",
         "state": "2021-11-24T23:07:32.000+0000",
         "stateDescription": {
             "pattern": "%s",
@@ -643,7 +643,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Sensor_Alert",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Sensor_Alert",
         "state": "ON",
         "stateDescription": {
             "pattern": "%s",
@@ -665,7 +665,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_Alert",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System_Alert",
         "state": "OFF",
         "stateDescription": {
             "pattern": "%s",
@@ -687,7 +687,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_APStatus",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Network_APStatus",
         "state": "NULL",
         "stateDescription": {
             "pattern": "%s",
@@ -793,7 +793,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_WifiRSSI",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Network_WifiRSSI",
         "state": "-19",
         "stateDescription": {
             "minimum": -90,
@@ -817,7 +817,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Sensor_Temperature",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Sensor_Temperature",
         "state": "22.69",
         "stateDescription": {
             "minimum": -20,
@@ -842,7 +842,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_WifiChannel",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Network_WifiChannel",
         "state": "1",
         "stateDescription": {
             "pattern": "%s",
@@ -863,7 +863,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_FreeStack",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System_FreeStack",
         "state": "3280",
         "stateDescription": {
             "minimum": 0,
@@ -888,7 +888,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Sensor_Pressure",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Sensor_Pressure",
         "state": "989.92",
         "stateDescription": {
             "minimum": 0,
@@ -913,7 +913,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_Reload",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System_Reload",
         "state": "Connected",
         "stateDescription": {
             "pattern": "%s",
@@ -1011,7 +1011,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_MAC",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Network_MAC",
         "state": "8C:AA:B5:7A:CF:A4",
         "stateDescription": {
             "pattern": "%s",
@@ -1032,7 +1032,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Status",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Status",
         "state": "NULL",
         "stateDescription": {
             "pattern": "%s",
@@ -1053,7 +1053,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_SSID",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Network_SSID",
         "state": "Domo",
         "stateDescription": {
             "pattern": "%s",
@@ -1074,7 +1074,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_Gateway",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Network_Gateway",
         "state": "10.1.1.1",
         "stateDescription": {
             "pattern": "%s",
@@ -1095,7 +1095,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_MQTT_Status",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_MQTT_Status",
         "state": "Connected",
         "stateDescription": {
             "pattern": "%s",
@@ -1201,7 +1201,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_DNS",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Network_DNS",
         "state": "8.8.8.8 / (IP unset)",
         "stateDescription": {
             "pattern": "%s",
@@ -1222,7 +1222,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_BuildGit",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System_BuildGit",
         "state": "Domo build: Oct    5 2021 07:01:57",
         "stateDescription": {
             "pattern": "%s",
@@ -1243,7 +1243,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System",
         "state": "{\"Name\": \"ESP_NAME\", \"Unit\": \"16\", \"Load\": \"8.86\", \"Heap\": \"19776\", \"Stack\": \"3072\", \"Time\": \"22:56:36\", \"Uptime\": \"1889\", \"Build_Git\": \"Domo build: Oct    5 2021 07:01:57\", \"Build_Date\": \"Oct    5 2021\", \"timestamp\": \"1637794596\"}",
         "stateDescription": {
             "pattern": "%s",
@@ -1264,7 +1264,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_Load",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System_Load",
         "state": "10.61",
         "stateDescription": {
             "minimum": 0,
@@ -1289,7 +1289,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Map",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Map",
         "state": "{\"0\": \"result\", \"1\": \"map\", \"2\": \"status\", \"3\": \"system\", \"4\": \"network\", \"timestamp\": \"1637766824\"}",
         "stateDescription": {
             "pattern": "%s",
@@ -1309,7 +1309,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Network",
         "state": "{\"MAC\": \"8C:AA:B5:7A:CF:A4\", \"IP\": \"10.1.1.116\", \"Subnet\": \"255.255.255.0\", \"Gateway\": \"10.1.1.1\", \"DNS\": \"8.8.8.8 / (IP unset)\", \"RSSI\": \"-19\", \"SSID\": \"Domo\", \"BSSID\": \"1C:BF:CE:E4:AD:E0\", \"WifiChannel\": \"1\", \"timestamp\": \"1637794593\"}",
         "stateDescription": {
             "pattern": "%s",
@@ -1330,7 +1330,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_BSSID",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Network_BSSID",
         "state": "1C:BF:CE:E4:AD:E0",
         "stateDescription": {
             "pattern": "%s",
@@ -1351,7 +1351,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_Map",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_System_Map",
         "state": "{\"0\": \"result\", \"1\": \"map\", \"2\": \"reboot\", \"3\": \"reload\", \"timestamp\": \"1637794561\"}",
         "stateDescription": {
             "pattern": "%s",
@@ -1372,7 +1372,7 @@
         ]
     },
     {
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_Map",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME_Network_Map",
         "state": "{\"0\": \"result\", \"1\": \"map\", \"2\": \"reboot\", \"3\": \"reload\", \"timestamp\": \"1637794561\"}",
         "stateDescription": {
             "pattern": "%s",

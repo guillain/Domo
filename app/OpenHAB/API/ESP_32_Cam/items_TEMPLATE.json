@@ -1,7 +1,7 @@
 [
     {
         "members": [],
-        "link": "OPENHAB_WEB_URL/rest/items/ESP_NAME",
+        "link": "OH_WEB_URL/rest/items/ESP_NAME",
         "state": "NULL",
         "editable": true,
         "type": "Group",
@@ -16,7 +16,7 @@
         ]
     },
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Preferences_Clear",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Preferences_Clear",
 		"state": "NULL",
 		"stateDescription": {
 			"readOnly": false,
@@ -36,7 +36,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_CodeVersion",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_CodeVersion",
 		"state": "Nov 15 2021 @ 21:34:31",
 		"stateDescription": {
 			"readOnly": false,
@@ -56,7 +56,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_AEC2",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_AEC2",
 		"state": "OFF",
 		"stateDescription": {
 			"readOnly": false,
@@ -76,7 +76,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_MAC",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Network_MAC",
 		"state": "7C:9E:BD:38:13:74",
 		"stateDescription": {
 			"readOnly": false,
@@ -96,7 +96,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_Saturation",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_Saturation",
 		"state": "0",
 		"stateDescription": {
 			"readOnly": false,
@@ -116,7 +116,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_Quality",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_Quality",
 		"state": "6",
 		"stateDescription": {
 			"readOnly": false,
@@ -136,7 +136,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_WPC",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_WPC",
 		"state": "ON",
 		"stateDescription": {
 			"readOnly": false,
@@ -156,7 +156,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_Name",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_Name",
 		"state": "ESP_NAME",
 		"stateDescription": {
 			"readOnly": false,
@@ -176,7 +176,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_Brightness",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_Brightness",
 		"state": "0",
 		"stateDescription": {
 			"readOnly": false,
@@ -196,7 +196,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_Contrast",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_Contrast",
 		"state": "0",
 		"stateDescription": {
 			"readOnly": false,
@@ -216,7 +216,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_AGCgain",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_AGCgain",
 		"state": "0",
 		"stateDescription": {
 			"readOnly": false,
@@ -236,7 +236,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_AEC",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_AEC",
 		"state": "ON",
 		"stateDescription": {
 			"readOnly": false,
@@ -256,7 +256,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_RSSI",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Network_RSSI",
 		"state": "-10",
 		"stateDescription": {
 			"readOnly": false,
@@ -276,7 +276,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Face_Detection",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Face_Detection",
 		"state": "OFF",
 		"stateDescription": {
 			"readOnly": false,
@@ -296,7 +296,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_RawGMA",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_RawGMA",
 		"state": "ON",
 		"stateDescription": {
 			"readOnly": false,
@@ -316,7 +316,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_AGC",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_AGC",
 		"state": "ON",
 		"stateDescription": {
 			"readOnly": false,
@@ -336,7 +336,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Status",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Status",
 		"state": "{lamp=0, autolamp=1, framesize=7, quality=6, brightness=0, contrast=0, saturation=0, sharpness=0, special_effect=0, wb_mode=0, awb=1, awb_gain=1, aec=1, aec2=0, ae_level=0, aec_value=168, agc=1, agc_gain=0, gainceiling=0, bpc=0, wpc=1, raw_gma=1, lenc=1, vflip=0, hmirror=1, dcw=1, colorbar=0, face_detect=0, face_enroll=0, face_recognize=0, cam_name=ESP_NAME, code_ver=Nov 15 2021 @ 21:34:31, rotate=-90, stream_url=http://ESP_IP_ADDRESS:8080/}",
 		"stateDescription": {
 			"readOnly": false,
@@ -356,7 +356,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Lamp_Auto",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Lamp_Auto",
 		"state": "ON",
 		"stateDescription": {
 			"readOnly": false,
@@ -376,7 +376,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_MCUtemperature",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_MCUtemperature",
 		"state": "42",
 		"stateDescription": {
 			"readOnly": false,
@@ -396,7 +396,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_AElevel",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_AElevel",
 		"state": "0",
 		"stateDescription": {
 			"readOnly": false,
@@ -416,7 +416,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Face_Enrollment",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Face_Enrollment",
 		"state": "OFF",
 		"stateDescription": {
 			"readOnly": false,
@@ -436,7 +436,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_Uptime",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_Uptime",
 		"state": "0:00:45:31",
 		"stateDescription": {
 			"readOnly": false,
@@ -456,7 +456,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_SSID",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Network_SSID",
 		"state": "Domo",
 		"stateDescription": {
 			"readOnly": false,
@@ -476,7 +476,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_Gainceiling",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_Gainceiling",
 		"state": "0",
 		"stateDescription": {
 			"readOnly": false,
@@ -496,7 +496,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_Framesize",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_Framesize",
 		"state": "7",
 		"stateDescription": {
 			"readOnly": false,
@@ -516,7 +516,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_Lenc",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_Lenc",
 		"state": "ON",
 		"stateDescription": {
 			"readOnly": false,
@@ -536,7 +536,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_BPC",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_BPC",
 		"state": "OFF",
 		"stateDescription": {
 			"readOnly": false,
@@ -556,7 +556,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_HorizontalMirror",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_HorizontalMirror",
 		"state": "ON",
 		"stateDescription": {
 			"readOnly": false,
@@ -576,7 +576,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_ActiveStreams",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Network_ActiveStreams",
 		"state": "0",
 		"stateDescription": {
 			"readOnly": false,
@@ -596,7 +596,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_AWBgain",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_AWBgain",
 		"state": "ON",
 		"stateDescription": {
 			"readOnly": false,
@@ -616,7 +616,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_PreviousStreams",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Network_PreviousStreams",
 		"state": "0",
 		"stateDescription": {
 			"readOnly": false,
@@ -636,7 +636,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_Heap",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_Heap",
 		"state": "299972",
 		"stateDescription": {
 			"readOnly": false,
@@ -657,7 +657,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_HeapFree",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_HeapFree",
 		"state": "299972",
 		"stateDescription": {
 			"readOnly": false,
@@ -678,7 +678,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_HeapMinFree",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_HeapMinFree",
 		"state": "299972",
 		"stateDescription": {
 			"readOnly": false,
@@ -699,7 +699,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_HeapMaxBlock",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_HeapMaxBlock",
 		"state": "299972",
 		"stateDescription": {
 			"readOnly": false,
@@ -720,7 +720,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_RAM",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_RAM",
 		"state": "4194220",
 		"stateDescription": {
 			"readOnly": false,
@@ -741,7 +741,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_RAMfree",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_RAMfree",
 		"state": "4194220",
 		"stateDescription": {
 			"readOnly": false,
@@ -762,7 +762,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_RAMminFree",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_RAMminFree",
 		"state": "4194220",
 		"stateDescription": {
 			"readOnly": false,
@@ -783,7 +783,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_RAMmaxBlock",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_RAMmaxBlock",
 		"state": "4194220",
 		"stateDescription": {
 			"readOnly": false,
@@ -804,7 +804,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Lamp_OnOff",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Lamp_OnOff",
 		"state": "UNDEF",
 		"stateDescription": {
 			"readOnly": false,
@@ -825,7 +825,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_Reboot",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_Reboot",
 		"state": "NULL",
 		"stateDescription": {
 			"readOnly": false,
@@ -846,7 +846,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Lamp",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Lamp",
 		"state": "0",
 		"stateDescription": {
 			"readOnly": false,
@@ -867,7 +867,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_AWB",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_AWB",
 		"state": "ON",
 		"stateDescription": {
 			"readOnly": false,
@@ -887,7 +887,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_Rotate",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_Rotate",
 		"state": "0",
 		"stateDescription": {
 			"readOnly": false,
@@ -907,7 +907,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Network",
 		"state": "<html><head><meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>ESP_NAME - Status</title>\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/style.css\">\n</head>\n<body>\n<img src=\"/logo.svg\" style=\"position: relative; float: right;\">\n<h1>ESP32 Cam Webserver</h1>\nName: ESP_NAME<br>\nFirmware: Nov 15 2021 @ 21:34:31 (base: 3.4)<br>\nSketch Size: 2816256 (total: 3145728, 89.0% used)<br>\nMD5: 2a3dcc58dfebf35a2447f71a304d3a5a<br>\nESP sdk: v3.3.5-1-g85c43024c<br>\n<h2>WiFi</h2>\nMode: Client<br>\nSSID: Domo<br>\nRssi: -10<br>\nBSSID: 1C:BF:CE:E4:AD:E0<br>\nIP address: ESP_IP_ADDRESS<br>\nNetmask: 255.255.255.0<br>\nGateway: 10.1.1.1<br>\nHttp port: 80, Stream port: 8080<br>\nMAC: 7C:9E:BD:38:13:74<br>\n<h2>System</h2>\nUp: 0:00:45:31 (d:h:m:s)<br>\nActive streams: 0, Previous streams: 0, Images captured: 0<br>\nFreq: 240 MHz<br>\n<span title=\"NOTE: Internal temperature sensor readings can be innacurate on the ESP32-c1 chipset, and may vary significantly between devices!\">MCU temperature : 42 &deg;C, 108 &deg;F</span>\n<br>Heap: 299972, free: 137840, min free: 127956, max block: 96352<br>\nPsram: 4194220, free: 3426220, min free: 3426220, max block: 3426220<br>\nSpiffs: 896321, used: 753<br>\nEnrolled faces: 0 (max 7)<br>\n<br><div class=\"input-group\">\n<button title=\"Instant Refresh; the page reloads every minute anyway\" onclick=\"location.replace(document.URL)\">Refresh</button>\n<button title=\"Close this page\" onclick=\"javascript:window.close()\">Close</button>\n</div>\n</body>\n<script>\nsetTimeout(function(){\nlocation.replace(document.URL);\n}, 60000);\n</script>\n</html>\n",
 		"stateDescription": {
 			"readOnly": false,
@@ -927,7 +927,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_Netmask",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Network_Netmask",
 		"state": "255.255.255.0",
 		"stateDescription": {
 			"readOnly": false,
@@ -947,7 +947,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_AECvalue",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_AECvalue",
 		"state": "100",
 		"stateDescription": {
 			"readOnly": false,
@@ -967,7 +967,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_VerticalFlip",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_VerticalFlip",
 		"state": "OFF",
 		"stateDescription": {
 			"readOnly": false,
@@ -987,7 +987,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Preferences_Save",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Preferences_Save",
 		"state": "NULL",
 		"stateDescription": {
 			"readOnly": false,
@@ -1007,7 +1007,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_IP",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Network_IP",
 		"state": "ESP_IP_ADDRESS",
 		"stateDescription": {
 			"readOnly": false,
@@ -1027,7 +1027,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Face_Recognition",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Face_Recognition",
 		"state": "NULL",
 		"stateDescription": {
 			"readOnly": false,
@@ -1047,7 +1047,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Network_ImagesCaptured",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Network_ImagesCaptured",
 		"state": "0",
 		"stateDescription": {
 			"readOnly": false,
@@ -1067,7 +1067,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_Camera_DCW",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_Camera_DCW",
 		"state": "ON",
 		"stateDescription": {
 			"readOnly": false,
@@ -1087,7 +1087,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_StreamURL",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_StreamURL",
 		"state": "http://ESP_IP_ADDRESS:8080/",
 		"stateDescription": {
 			"readOnly": false,
@@ -1107,7 +1107,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_FS",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_FS",
 		"state": "4194220",
 		"stateDescription": {
 			"readOnly": false,
@@ -1128,7 +1128,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_FSused",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_FSused",
 		"state": "4194220",
 		"stateDescription": {
 			"readOnly": false,
@@ -1149,7 +1149,7 @@
 		]
 	},
 	{
-		"link": "OPENHAB_WEB_URL/rest/items/ESP_NAME_System_EnrolledFaces",
+		"link": "OH_WEB_URL/rest/items/ESP_NAME_System_EnrolledFaces",
 		"state": "4194220",
 		"stateDescription": {
 			"readOnly": false,

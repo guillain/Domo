@@ -9,10 +9,11 @@
     3. [System locale](#system-locale)
     4. [Password](#password)
     5. [Disable Wifi](#disable-wifi)
-    6. [ZRam](#zram)
+    6. [Uninstall ZRam](#uninstall-zram)
 3. [Addons](#addons)
     1. [Log viewer](#log-viewer)
     2. [Mosquitto](#mosquitto---mqtt-broker)
+    3. [NTP server](#ntp-server)
 4. [Tuning](#tuning)
     1. [Firewall](#firewall)
     2. [External wifi board](#external-wifi-board)
@@ -80,9 +81,9 @@ In fact it will be managed by RaspAP.
 
 > | Disable WiFi
 
-### ZRam
+### Uninstall ZRam
 
-> 38 | Use zram
+> 38 | Uninstall  zram
 
 ## Addons
 
@@ -114,21 +115,55 @@ sudo echo 'listener 1883' >> /etc/mosquitto/mosquitto.conf
 sudo systemctl restart mosquitto
 ````
 
+### NTP server
+Always useful to be on time!
+````commandline
+sudo apt-get -y install ntp
+````
+
+And configure the server:
+````commandline
+echo "
+server 0.europe.pool.ntp.org
+server 1.europe.pool.ntp.org
+server 2.europe.pool.ntp.org
+server 3.europe.pool.ntp.org
+restrict 10.1.1.0
+" >> /etc/ntp.conf
+sudo service ntp restart
+sudo service ntp status
+````
+
+Remember to install and configure the client on other endpoints if required:
+````commandline
+sudo apt-get install ntpdate`
+echo "server 10.1.1.1 prefer iburst" >> /etc/ntp/conf && sudo service ntp restart
+ntpq -ps
+````
+
 ## Tuning
 
 ### Firewall
 
 Can be useful to have a firewall...
 
+Rules for **TCP** only.
+
 ````commandline
 sudo apt-get install ufw
 sudo ufw enable
 sudo ufw allow 22     # SSH
-sudo ufw allow 123    # NTP
+sudo ufw allow 53     # DNS
+sudo ufw allow from any to any port 123 proto udp # NTP
+sudo ufw allow 139    # NetBIOS/SMB
+sudo ufw allow 445    # SMB
 sudo ufw allow 80     # HTTP - RaspAP
-sudo ufw allow 8080   # HTTP - OpenHAB
-sudo ufw allow 9001   # HTTP - Log viewer
 sudo ufw allow 1883   # MQTT - Mosquitto <> OpenHAB, ESP
+sudo ufw allow 5007   # HTTP - OpenHAB
+sudo ufw allow 8080   # HTTP - OpenHAB
+sudo ufw allow 8101   # HTTP - OpenHAB
+sudo ufw allow 8443   # HTTPS - OpenHAB
+sudo ufw allow 9001   # HTTP - Log viewer
 ````
 
 ### External wifi board
