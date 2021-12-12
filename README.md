@@ -2,7 +2,7 @@
 
 Solution to deploy, provision and manage all pieces of puzzle of a domotic system.
 
-- Platform: [Raspberry 3b+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/)
+- Platform: [Raspberry 4b](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/) or [Raspberry 3b+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/)
   and [ESP](https://fr.wikipedia.org/wiki/ESP32) (32/8266)
 - Network: [RaspAP](https://raspap.com/) (AP, DHCP, DNS, Firewall)
 - Domotic: [OpenHab3](https://www.openhab.org/blog/2020-12-21-openhab-3-0-release.html) including Things, Items and
