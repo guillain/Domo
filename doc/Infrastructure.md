@@ -6,7 +6,7 @@
 
 ## Overview
 
-<img src="images/infrastructure_overview.png" width="800"/>
+<img src="images/Infrastructure-Overview.png" width="800"/>
 
 ## Installation guides
 
