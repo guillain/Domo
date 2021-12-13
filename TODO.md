@@ -48,7 +48,8 @@
 
 - &#10007; ESP-32-Cam, full migration
 - &#10007; ESP-8266-RFID, collect system metrics
-
+- &#10007; Dashboard (which web server?)
+ 
 ## Legend
 
 - &#10007;: to do as lowest priority

@@ -1,8 +1,9 @@
 # Infrastructure
 
 1. [Overview](#overview)
-2. [Installation guides](#installation-guides)
-3. [Integration matrix](Integration_matrix.md)
+2. [Network](Network.md)
+3. [Installation guides](#installation-guides)
+4. [Integration matrix](Integration_matrix.md)
 
 ## Overview
 

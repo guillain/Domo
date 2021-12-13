@@ -4,7 +4,7 @@
 2. [v1.1](#11)
 3. [v1.0](#10)
 
-## x.y
+## 2.1
 
 @Date: YYYY/MM/DD
 
@@ -19,6 +19,7 @@
 - [X] Asset refactoring
 - [X] Doc refactoring and enrichment
 - [X] Script improvement
+- [X] MQTT standard and generic topic
 
 ## 1.1
 

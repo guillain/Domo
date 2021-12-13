@@ -150,7 +150,6 @@ Setup in: `OpenHAB/ESP_8266_RFID/rules_TEMPLATE.txt`
 | Access   | Last    | `ESP/8266/ESP_REFERENCE/access/last`    | json   | string     | `{"name":"","uid":"","type":"","time":"","isknown":""}`                |
 | Access   | Last Ok | `ESP/8266/ESP_REFERENCE/access/last_ok` | json   | string     | `{"name":"","uid":"","type":"","time":""}`                             |
 | Access   | Last Ko | `ESP/8266/ESP_REFERENCE/access/last_ko` | json   | string     | `{"name":"","uid":"","type":"","time":""}`                             |
-| Access   | Last Ko | `ESP/8266/ESP_REFERENCE/access/last_ko` | json   | string     | `{"name":"","uid":"","type":"","time":""}`                             |
 | RFID     | Users   | `ESP/8266/ESP_REFERENCE/rfid/users`     | json   | string     | `{"name":"","uid":"","type":"","time":""}`                             |
 
 #### Commands
@@ -167,7 +166,7 @@ Setup in: `OpenHAB/ESP_8266_RFID/rules_TEMPLATE.txt`
 | User     | Get        | `ESP/8266/ESP_REFERENCE/rfid` | `{"doorip":"[ESP_IP_ADDRESS]","cmd":"getuser"}`    | nan          | get one user     |
 | User     | Add        | `ESP/8266/ESP_REFERENCE/rfid` | `{"doorip":"[ESP_IP_ADDRESS]","cmd":"adduser"}`    | nan          | Add a user       |
 | User     | Delete all | `ESP/8266/ESP_REFERENCE/rfid` | `{"doorip":"[ESP_IP_ADDRESS]","cmd":"deletusers"}` | nan          | Delete all users |
-| Door     | Open       | `ESP/8266/ESP_REFERENCE/rfid` | `{"doorip":"[ESP_IP_ADDRESS]","cmd":"opendoor"}`   | nan          | Door is open     |
+| Door     | Open door  | `ESP/8266/ESP_REFERENCE/rfid` | `{"doorip":"[ESP_IP_ADDRESS]","cmd":"opendoor"}`   | nan          | Door is open     |
 
 ## Links
 

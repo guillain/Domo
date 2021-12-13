@@ -7,8 +7,8 @@
     3. [MQTT Broker](#mqtt-broker)
 3. [Templates](#templates)
     1. [Generate your templates](#generate-your-templates)
-4. [Links](#links)
 5. [Error & Fix](#error--fix)
+4. [Links](#links)
 
 ## Installation
 
@@ -183,3 +183,19 @@ done
   - Fix: `openhabian-config -> 10 | Apply Improvements -> 14 | Fix Permissions`
   - _Tips_: ZRam can create this issue, thanks to uninstall and reboot your Py.
 - 
+
+## Links
+
+- MQTT Things and Channels Binding: https://www.openhab.org/addons/bindings/mqtt.generic/
+- Python HowDoI: https://openhab-scripters.github.io/openhab-helper-libraries/Guides/But%20How%20Do%20I.html
+- Actions: https://openhab-scripters.github.io/openhab-helper-libraries/Guides/Actions.html#actions
+- Icon set names: https://community.openhab.org/t/names-of-the-default-icon-sets/22800/4
+    ````commandline
+    var iconsets = [
+        { id: 'freepik-household', name: 'Builtin: Freepik Household', type: 'builtin', colorize: true },
+        { id: 'freepik-gadgets', name: 'Builtin: Freepik Gadgets', type: 'builtin', colorize: true },
+        { id: 'freepik-housethings', name: 'Builtin: Freepik House Things', type: 'builtin', colorize: true },
+        { id: 'smarthome-set', name: 'Builtin: Smart Home Set', type: 'builtin', colorize: true },
+        { id: 'eclipse-smarthome-classic', name: 'Eclipse SmartHome Classic', type: 'oh2', oh2iconset: 'classic', colorize: false }
+    ];
+    ````

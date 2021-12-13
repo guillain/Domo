@@ -49,7 +49,7 @@
             <td style="width: 10%;"><a href="https://github.com/esprfid/esp-rfid">GitHub</a></td>
         </tr>
         <tr>
-            <td style="width: 7%;" name="ESP_8266_WifiRepeater">Wifi repeater</td>
+            <td style="width: 7%;" name="ESP_8266_Repeater">Wifi repeater</td>
             <td style="width: 4%;">ESP-8266 D1-mini</td>
             <td style="width: 20%;">Wifi AP extender</td>
             <td style="width: 3%; text-align: center;">&#10008;</td>

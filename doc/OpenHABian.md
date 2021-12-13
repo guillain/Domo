@@ -104,6 +104,7 @@ sudo mosquitto_passwd -b /etc/mosquitto/passwd MosquittoOpenHAB _PASSWORD_
 sudo mosquitto_passwd -b /etc/mosquitto/passwd MosquittoESP _PASSWORD_
 sudo mosquitto_passwd -b /etc/mosquitto/passwd MosquittoNoeRED _PASSWORD_
 sudo mosquitto_passwd -b /etc/mosquitto/passwd MosquittoRFID _PASSWORD_
+sudo mosquitto_passwd -b /etc/mosquitto/passwd MosquittoGUI _PASSWORD_     # WIP for MQTT GUI
 ````
 
 _Tips_: You can add the Mosquitto's logs in the Log viewer ;)
@@ -152,18 +153,20 @@ Rules for **TCP** only.
 ````commandline
 sudo apt-get install ufw
 sudo ufw enable
-sudo ufw allow 22     # SSH
-sudo ufw allow 53     # DNS
-sudo ufw allow from any to any port 123 proto udp # NTP
-sudo ufw allow 139    # NetBIOS/SMB
-sudo ufw allow 445    # SMB
-sudo ufw allow 80     # HTTP - RaspAP
-sudo ufw allow 1883   # MQTT - Mosquitto <> OpenHAB, ESP
-sudo ufw allow 5007   # HTTP - OpenHAB
-sudo ufw allow 8080   # HTTP - OpenHAB
-sudo ufw allow 8101   # HTTP - OpenHAB
-sudo ufw allow 8443   # HTTPS - OpenHAB
-sudo ufw allow 9001   # HTTP - Log viewer
+sudo ufw allow from any to any port 22   proto tcp   # SSH
+sudo ufw allow from any to any port 53   proto tcp   # DNS - RaspAP
+sudo ufw allow from any to any port 53   proto udp   # DNS - RaspAP
+sudo ufw allow from any to any port 67   proto udp   # DNS - RaspAP
+sudo ufw allow from any to any port 123  proto udp   # NTP
+sudo ufw allow from any to any port 139  proto tcp   # NetBIOS/SMB
+sudo ufw allow from any to any port 445  proto tcp   # SMB
+sudo ufw allow from any to any port 80   proto tcp   # HTTP - RaspAP
+sudo ufw allow from any to any port 1883 proto tcp   # MQTT - Mosquitto <> OpenHAB, ESP
+sudo ufw allow from any to any port 5007 proto tcp   # HTTP - OpenHAB
+sudo ufw allow from any to any port 8080 proto tcp   # HTTP - OpenHAB
+sudo ufw allow from any to any port 8101 proto tcp   # HTTP - OpenHAB
+sudo ufw allow from any to any port 8443 proto tcp   # HTTPS - OpenHAB
+sudo ufw allow from any to any port 9001 proto tcp   # HTTP - Log viewer
 ````
 
 ### External wifi board
